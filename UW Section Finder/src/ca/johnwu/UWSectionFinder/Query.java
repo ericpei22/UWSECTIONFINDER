@@ -62,7 +62,7 @@ import java.net.*;
 		
 		while ((current = br.readLine()) != null) {
 			System.out.println(current);
-			if (current.substring(0,current.length()-4).equals(name)){
+			if (current.substring(0,current.length()-4).contains(name)){
 				return current.substring(current.length()-3);
 			}
 		}
